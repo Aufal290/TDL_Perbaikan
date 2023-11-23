@@ -13,4 +13,11 @@ public class DependentTask extends Task {
     public void setDependent(int dependent) {
         this.dependent = dependent;
     }
+
+    @Override
+    public void displayTaskDetails() {
+        System.out.println("Deskripsi: " + getDescription());
+        System.out.println("Deadline: " + getDeadline());
+        System.out.println("Tugas yang Bergantung: " + getDependent());
+    }
 }

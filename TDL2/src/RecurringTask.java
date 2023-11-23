@@ -13,4 +13,11 @@ public class RecurringTask extends Task {
     public void setRecurringInterval(int recurringInterval) {
         this.recurringInterval = recurringInterval;
     }
+
+    @Override
+    public void displayTaskDetails() {
+        System.out.println("Deskripsi: " + getDescription());
+        System.out.println("Deadline: " + getDeadline());
+        System.out.println("Interval Berulang: " + getRecurringInterval());
+    }
 }

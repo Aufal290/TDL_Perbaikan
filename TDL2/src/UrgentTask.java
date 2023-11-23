@@ -13,4 +13,10 @@ public class UrgentTask extends Task {
     public void setUrgent(int urgent) {
         this.urgent = urgent;
     }
+
+    public void displayTaskDetails() {
+        System.out.println("Deskripsi: " + getDescription());
+        System.out.println("Deadline: " + getDeadline());
+        System.out.println("Tingkat Urgensi: " + getUrgent());
+    }
 }

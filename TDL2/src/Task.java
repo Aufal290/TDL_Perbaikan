@@ -1,4 +1,4 @@
-public class Task {
+public abstract class Task {
     private String description;
     private String deadline;
 
@@ -11,6 +11,10 @@ public class Task {
         return description;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public String getDeadline() {
         return deadline;
     }
@@ -18,4 +22,6 @@ public class Task {
     public void setDeadline(String deadline) {
         this.deadline = deadline;
     }
+
+    public abstract void displayTaskDetails();
 }
